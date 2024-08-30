@@ -14,7 +14,7 @@ add_library(solver_lib STATIC ${CMAKE_CURRENT_SOURCE_DIR}/solver_lib/solver.cpp)
 
 target_link_libraries(formatter_ex_lib formatter_lib)
 
-add_executable(equation ${CMAKE_CURRENT_SOURCE_DIR}/solver/equation.cpp)
+add_executable(equation ${CMAKE_CURRENT_SOURCE_DIR}/solver_application/equation.cpp)
 target_link_libraries(equation formatter_ex_lib)
 target_link_libraries(equation solver_lib)
 
